@@ -45,9 +45,19 @@ body {
   list-style: circle;
   padding-left: 1.1em;
 }
-.active-list {
-  font-weight: 700;
+
+form {
+  display: flex;
 }
+
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
 .new {
   background: transparent;
   border: 0;
@@ -57,16 +67,23 @@ body {
   outline: none;
 
   transition: border-bottom 150ms ease-in;
+  order: 2;
 }
 
 .new:focus {
   border-bottom-width: 3px;
 }
 
-.new:focus {
+.new:focus::placeholder {
   opacity: 0.2;
 }
+.new.list {
+  font-size: 1.1rem;
+}
 
+.active-list {
+  font-weight: 700;
+}
 .todo-list {
   grid-area: active;
 }
