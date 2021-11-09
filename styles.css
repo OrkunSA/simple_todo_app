@@ -103,14 +103,18 @@ form {
 .todo-header {
   padding: var(--spacer);
   background: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .list-title {
-  margin: 0;
+  margin: 0 1em 0 0;
 }
 
 .task-count {
   margin: 0;
+  font-size: 1rem;
 }
 
 .todo-body {
