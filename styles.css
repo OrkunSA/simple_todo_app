@@ -49,7 +49,7 @@ body {
 form {
   display: flex;
 }
-m .btn {
+.btn {
   cursor: pointer;
   background: 0;
   border: 0;
@@ -93,5 +93,9 @@ m .btn {
   font-weight: 700;
 }
 .todo-list {
+  --spacer: 2rem;
+
   grid-area: active;
+  background: var(--clr-light);
+  color: var(--clr-dark);
 }
