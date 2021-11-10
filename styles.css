@@ -1,7 +1,7 @@
 :root {
-  --clr-primary: rgb(54, 112, 199);
+  --clr-primary: rgb(8, 13, 21);
   --clr-light: #f4f4f4;
-  --clr-dark: #333;
+  --clr-dark: rgb(55, 39, 39);
   --clr-warning: rgb(99, 36, 36);
 }
 
