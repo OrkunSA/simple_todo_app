@@ -22,6 +22,10 @@ function createList(name) {
     tasks: [],
   };
 }
+
+function save() {
+    localStorage.setItem(LOCAL_STORAGE_LIST_KEY, JSON.stringify(lists))
+}
 function render() {
   clearElement(listsContainer);
   lists.forEach((list) => {
