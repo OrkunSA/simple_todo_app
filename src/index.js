@@ -56,6 +56,14 @@ function save() {
 function render() {
   clearElement(listsContainer);
   renderList();
+  const selectedList = lists.find((list) => list.id === selectedListId);
+
+  if (selectedListId === null) {
+    listDisplayContainer.style.display = 'none';
+  } else {
+    listDisplayContainer.style.display = '';
+    listTitleElement.innerText = selectedList.name;
+  }
 }
 
 function renderList() {
