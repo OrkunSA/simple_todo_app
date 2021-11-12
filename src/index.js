@@ -52,7 +52,7 @@ function save() {
 }
 function render() {
   clearElement(listsContainer);
-  renderList();
+  renderLists();
   const selectedList = lists.find((list) => list.id === selectedListId);
 
   if (selectedListId === null) {
@@ -87,7 +87,7 @@ function renderTaskCount(selectedList) {
   listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`;
 }
 
-function renderList() {
+function renderLists() {
   lists.forEach((list) => {
     const listElement = document.createElement('li');
     listElement.dataset.listId = list.id;
