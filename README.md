@@ -1,6 +1,10 @@
 <img width="1323" alt="Todo App" src="/public/images/image1.png">
 <img width="1323" alt="Todo App" src="/public/images/image2.png">
 
+# Live
+
+https://dazzling-galileo-478b11.netlify.app/
+
 # Description
 
 A Simple Todo App built with HTML,CSS and JavaScript
