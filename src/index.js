@@ -55,6 +55,10 @@ function save() {
 }
 function render() {
   clearElement(listsContainer);
+  renderList();
+}
+
+function renderList() {
   lists.forEach((list) => {
     const listElement = document.createElement('li');
     listElement.dataset.listId = list.id;
