@@ -18,12 +18,8 @@
     <h1 class="title"></h1>
 
     <div class="all-tasks">
-      <h1 class="task-list-title">My Lists</h1>
-      <ul class="task-list" data-lists>
-        <!-- <li class="list-name active-list">Work</li>
-        <li class="list-name">Home</li>
-        <li class="list-name">Coding</li> -->
-      </ul>
+      <h2 class="task-list-title">My Lists</h2>
+      <ul class="task-list" data-lists></ul>
 
       <form action="" data-new-list-form>
         <input
@@ -43,23 +39,7 @@
       </div>
       <div class="todo-body">
         <div class="tasks">
-          <div class="task">
-            <input type="checkbox" id="task-1" />
-            <label for="task-1">
-              <span class="custom-checkbox"></span>
-              First task</label
-            >
-          </div>
-          <!-- task -1-->
-          <div class="task">
-            <input type="checkbox" id="task-2" />
-            <label for="task-2">
-              <span class="custom-checkbox"></span>
-              Second task</label
-            >
-          </div>
-          <!-- task -2-->
-        </div>
+          <div class="task" data-tasks></div>
         <div class="new-task-creator">
           <form action="" data-new-task-form>
             <input
@@ -73,7 +53,9 @@
           </form>
         </div>
         <div class="delete-items">
-          <button class="btn delete">Clear completed task</button>
+          <button class="btn delete" data-clear-complete-tasks-button>
+            Clear completed task
+          </button>
           <button class="btn delete" data-delete-list-button>
             Delete List
           </button>
