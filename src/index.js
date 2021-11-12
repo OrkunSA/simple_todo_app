@@ -41,7 +41,13 @@ function createList(name) {
   return {
     id: Date.now().toString(),
     name: name,
-    tasks: [],
+    tasks: [
+      {
+        id: 1,
+        name: 'example',
+        complete: false,
+      },
+    ],
   };
 }
 function saveAndRender() {
@@ -63,7 +69,16 @@ function render() {
   } else {
     listDisplayContainer.style.display = '';
     listTitleElement.innerText = selectedList.name;
+    renderTaskCount(selectedList);
   }
+}
+
+function renderTaskCount(selectedList) {
+  const incompleteTaskCount = selectedList.tasks.filter(
+    (task) => !task.complete
+  ).length;
+  const taskString = incompleteTaskCount === 1 ? 'task' : 'tasks';
+  listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`;
 }
 
 function renderList() {
